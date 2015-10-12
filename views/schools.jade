@@ -1,0 +1,8 @@
+extends layout
+
+block content
+
+	each school in schools
+		p #{school.name} 
+		a(href="/deleteSchool/#{school._id}") remove <br>
+	a(href="/") Back

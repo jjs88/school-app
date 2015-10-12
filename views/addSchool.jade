@@ -1,0 +1,18 @@
+extends layout
+
+block content
+
+	form(action='/postSchool' method='post')
+		| School:
+		br
+		input(type='text', name='name')
+		br
+		| State:
+		br
+		input(type='text', name='state')
+		br
+		| Population: 
+		br
+		input(type='text', name='population')
+		br
+		input(type='submit', value='Submit')

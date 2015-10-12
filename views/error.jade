@@ -1,0 +1,6 @@
+extends layout
+
+block content
+	ul
+		each error in errors
+			li #{error.msg}
